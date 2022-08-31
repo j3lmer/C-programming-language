@@ -3,11 +3,10 @@
 int main()
 {
 	int c;
-
 	int blanks, tabs, newlines = 0;
 		
 	
-	while ((c = getchar()) != EOF)  {
+	while ((c = getchar()) != '\n')  {
 
 		switch (c) {
 			case ' ':
