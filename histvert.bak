@@ -1,0 +1,65 @@
+#include <stdio.h>
+
+int main()
+{
+	int numberOfWords, longestWord, c, i, k, ARRSIZE;
+	ARRSIZE = 50;
+
+	int arr[ARRSIZE];
+	numberOfWords = longestWord = i = k = 0;
+
+	for (i = 0; i < ARRSIZE; i++) {
+		arr[i] = 0;
+	}
+
+	while ((c = getchar()) != '\n') {
+		if(c == ' ' || c == '\t') {
+			arr[i] = k;
+			i++;
+
+			if (k > longestWord)
+				longestWord = k;
+
+			k = 0;
+		}
+		k++;
+	}
+
+
+	printf("number of words: %d, longest word: %d", i, longestWord);
+
+	// numberOfWords = i;
+ // 
+	// int newArr[i]; //for some reason if this line is not here, it throws a segfault.
+// 
+	 // for (k = 0; k < longestWord; k++) {
+		// for (i = 0; i < numberOfWords; i++) {
+			// if (arr[i] > 0) {
+				// printf("|");
+				// arr[i]--;
+			// }
+			// if (arr[i] == 0)
+				// break;
+		// }
+		// printf("\n");
+	 // }
+}
+
+
+	//wanted to increment a variable and create a dynamically sized array, 
+	//but i couldnt figure out how to save the string and loop over it again with only information from the book so far.
+	//so im using a fixed size array.
+
+
+	// while ((c = getchar()) != '\n') {
+		// if (c == ' ' || c == '\t') {
+			// arr[curWordIndex] = curWordLength;
+			// curWordIndex++;
+// 
+			// if (curWordLength > longestWord) {
+				// longestWord = curWordLength;
+			// }
+			// curWordLength = 0;
+		// }
+		// curWordLength++;
+	// }
