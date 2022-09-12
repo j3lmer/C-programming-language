@@ -1,0 +1,1 @@
+In the book, there are a lot of exercises in which is asked to do something with a file. but it is not covered how to 'import' a file. in cases where it is not possible to have the file replaced by simple terminal input, i have skipped these exercises.
