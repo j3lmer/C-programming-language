@@ -1,5 +1,0 @@
-HOW TO TEST
-Use long strings
-use only 'empty' characters
-use a lot of special characters
-use 'blank' characters which are not spaces as spaces
